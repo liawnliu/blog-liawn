@@ -1,0 +1,29 @@
+{
+  "name": "blog-liawn",
+  "version": "1.0.0",
+  "description": "用vitepress搭建文档",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "repository": "git+https://github.com/liawnliu/blog-liawn.git",
+  "keywords": [
+    "blog",
+    "vue",
+    "vitepress"
+  ],
+  "author": "liawnliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liawnliu/blog-liawn/issues"
+  },
+  "homepage": "https://github.com/liawnliu/blog-liawn#readme",
+  "dependencies": {
+    "vitepress": "^1.0.0-alpha.73"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "prettier": "^2.2.1"
+  }
+}

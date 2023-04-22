@@ -1,0 +1,49 @@
+{
+  /*
+       不要同时开启editor.formatOnSave和source.fixAll.eslint，这样会导致两次lint检查，那么我们保留
+       source.fixAll.eslint的，至于editor.formatOnSave我们单独放在[jsonn]、[scss]、[less]等配置中，
+       意思是能用eslint进行fix的就用eslint，它不行的再使用prettier进行格式化。
+   */
+  "editor.formatOnSave": false,
+  // vscode保存时修复有eslint问题的代码
+  "editor.codeActionsOnSave": {
+    // 项目里得有.eslintrc.js（json也可以），那么就会根据.eslintrc.js文件进行格式化代码
+    "source.fixAll.eslint": true, // "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    // 项目里得有.stylelint.config.js
+    "source.fixAll.stylelint": true // "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  // 既然editor.formatOnSave关闭了，那eslint.format.enable也得关闭。你放心，source.fixAll.eslint是生效的
+  "eslint.format.enable": false,
+  // ESLint添加支持，老版的是eslint.validate，暂时不去掉，以防万一
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "vue"],
+  // ESLint添加支持，新版的是eslint.probe
+  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "vue"],
+  /*
+       有坑的地方：如果配置了eslint.options的plugins，而具体项目中又没安装这个plugins里的插件，那么Vscode
+       的ESLint插件可能运行异常，比如报错Failed to load plugin 'html' declared in 'CLIOptions'。这样可能导致
+       ESLint插件在代码保存时不能fix，也可能会没有飘红的提示。解决办法是在你想要格式化的工程里安装对应的plugins，
+       另外一种办法是将eslint.options或者里面的plugins删除。
+   */
+  "eslint.options": {
+    "configFile": ".eslintrc.js"
+  },
+  // alwaysShowStatus最好打开，可观察到ESLint插件运行情况。具体报错信息可通过右下角的“ESLint”查看。
+  "eslint.alwaysShowStatus": true,
+  // 这种类型的文件就开启formatOnSave，以及defaultFormatter。因为eslint和stylelint对它们束手无策
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
