@@ -1,11 +1,11 @@
 {
-  "name": "blog-vuepress",
+  "name": "blog-liawn",
   "short_name": "blog",
   "display": "standalone",
   "background_color": "#fff",
-  "start_url": "/blog-vuepress/",
-  "scope": "/blog-vuepress/",
-  "description": "由vuepress搭建的文档(博客)",
+  "start_url": "/blog-liawn/",
+  "scope": "/blog-liawn/",
+  "description": "由vitepress搭建的文档(博客)",
   "icons": [
     {
       "src": "android-launchericon-192-192.png",
