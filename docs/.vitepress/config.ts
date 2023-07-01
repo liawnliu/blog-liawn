@@ -7,7 +7,6 @@ export default defineConfig({
   title: 'Liawn\'s blog',
   description: '用vuepress2搭建的个人博客',
   srcDir: './src',
-  base: '/',
   head: [
       ['meta', {charset: 'UTF-8'}],
       ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)

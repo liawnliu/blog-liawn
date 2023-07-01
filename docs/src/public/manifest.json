@@ -3,8 +3,6 @@
   "short_name": "blog",
   "display": "standalone",
   "background_color": "#fff",
-  "start_url": "/",
-  "scope": "/",
   "description": "由vitepress搭建的文档(博客)",
   "icons": [
     {
