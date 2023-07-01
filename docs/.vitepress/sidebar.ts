@@ -350,8 +350,16 @@ const sidebar = {
             collapsed: true,
             items: [
                 {
-                    text: '1.环境搭建和基础语法',
-                    link: '/back-end/JavaSE/1.环境搭建和基础语法'
+                    text: '1.JavaSE基础篇',
+                    link: '/back-end/JavaSE/1.JavaSE基础篇'
+                },
+                {
+                    text: '2.JavaSE加强篇1',
+                    link: '/back-end/JavaSE/2.JavaSE加强篇1'
+                },
+                {
+                    text: '3.JavaSE加强篇2',
+                    link: '/back-end/JavaSE/3.JavaSE加强篇2'
                 },
             ],
         },{
@@ -451,12 +459,32 @@ const sidebar = {
     {
         text: '日常生活',
         collapsed: false,
-        items: [
-            {
-                text: '土味情话',
-                link: '/my-life/日常生活/土味情话'
-            } 
-        ]
+        items: [{
+            text: '土味情话',
+            link: '/my-life/日常生活/驾照'
+        },{
+            text: '驾照',
+            collapsed: true,
+            link: '/my-life/日常生活/驾照/',
+            items: [
+                {
+                    text: '1.科目1-信号开关类',
+                    link: '/my-life/日常生活/驾照/1.科目1-信号开关类'
+                },
+                {
+                    text: '2.科目1-通行常识类',
+                    link: '/my-life/日常生活/驾照/2.科目1-通行常识类'
+                },
+                {
+                    text: '3.科目1-交通法规类',
+                    link: '/my-life/日常生活/驾照/3.科目1-交通法规类'
+                },
+                {
+                    text: '4.科目1-易错点口诀',
+                    link: '/my-life/日常生活/驾照/4.科目1-易错点口诀'
+                }
+            ]
+        }]
     },
     {
         text: '影视剪辑',
