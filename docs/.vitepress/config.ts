@@ -7,17 +7,17 @@ export default defineConfig({
   title: 'Liawn\'s blog',
   description: '用vuepress2搭建的个人博客',
   srcDir: './src',
-  base: '/blog-liawn/',
+  base: '/',
   head: [
       ['meta', {charset: 'UTF-8'}],
-      ['link', { rel: 'icon', href: '/blog-liawn/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
-      ['link', { rel: 'manifest', href: '/blog-liawn/manifest.json' }],
+      ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
+      ['link', { rel: 'manifest', href: '/manifest.json' }],
       ['meta', { name: 'theme-color', content: '#ffffff' }],
       ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
       ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-      ['link', { rel: 'apple-touch-icon', href: '/blog-liawn/apple-touch-icon-152x152.png' }],
-      ['link', { rel: 'mask-icon', href: '/blog-liawn/safari-pinned-tab.svg', color: '#ffffff' }],
-      ['meta', { name: 'msapplication-TileImage', content: '/blog-liawn/msapplication-icon-144x144.png' }],
+      ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-152x152.png' }],
+      ['link', { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#ffffff' }],
+      ['meta', { name: 'msapplication-TileImage', content: '/msapplication-icon-144x144.png' }],
       ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   themeConfig: {
