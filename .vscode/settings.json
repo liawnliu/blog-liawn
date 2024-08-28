@@ -7,10 +7,8 @@
   "editor.formatOnSave": false,
   // vscode保存时修复有eslint问题的代码
   "editor.codeActionsOnSave": {
-    // 项目里得有.eslintrc.js（json也可以），那么就会根据.eslintrc.js文件进行格式化代码
-    "source.fixAll.eslint": true, // "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    // 项目里得有.stylelint.config.js
-    "source.fixAll.stylelint": true // "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
   // 既然editor.formatOnSave关闭了，那eslint.format.enable也得关闭。你放心，source.fixAll.eslint是生效的
   "eslint.format.enable": false,

@@ -558,6 +558,35 @@ const sidebar = {
                     link: '/my-life/电商运营/抖店无货源/1.抖音精细化选品的8个方法'
                 },
             ],
+        }, {
+            text: '女装有货源无库存',
+            collapsed: true,
+            link: '/my-life/电商运营/女装有货源无库存/',
+            items: [
+                {
+                    text: '1.开店以及设置',
+                    link: '/my-life/电商运营/女装有货源无库存/1.开店以及设置'
+                },
+                {
+                    text: '2.选品上架以及运营',
+                    link: '/my-life/电商运营/女装有货源无库存/2.选品上架以及运营'
+                },
+            ],
+        }]
+    },
+    {
+        text: 'TikTok',
+        collapsed: false,
+        items: [{
+            text: '翻译',
+            collapsed: true,
+            link: '/my-life/TikTok/翻译/',
+            items: [
+                {
+                    text: 'deeply',
+                    link: '/my-life/TikTok/翻译/deeply'
+                },
+            ],
         }]
     }]
 } as DefaultTheme.Sidebar;
