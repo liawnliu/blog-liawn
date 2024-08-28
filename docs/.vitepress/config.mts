@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import sidebar from'./sidebar';
+import sidebar from'./sidebar.js';
 import renderInlineCode from "./render-inline-code.js"
 
 // https://vitepress.dev/reference/site-config
@@ -30,7 +30,10 @@ export default defineConfig({
       { text: '生活', link: '/my-life/' }
     ],
     sidebar,
-    outline: 'deep',
+    outline: {
+      level: 'deep',
+      label: '页面导航'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/liawnliu/blog-liawn' }
     ],
