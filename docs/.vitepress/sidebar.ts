@@ -455,6 +455,29 @@ const sidebar = {
                 link: '/my-life/电脑工具/SoftEther实现虚拟局域网'
             } 
         ]
+    },
+    {
+        text: '手机工具',
+        collapsed: false,
+        items: [{
+            text: 'Shizuku',
+            collapsed: true,
+            link: '/my-life/手机工具/Shizuku/',
+            items: [
+                {
+                    text: '1.Shizuku的使用',
+                    link: '/my-life/手机工具/Shizuku/1.Shizuku的使用'
+                },
+                {
+                    text: '2.给自己的应用添加ShizukuAPI',
+                    link: '/my-life/手机工具/Shizuku/2.给自己的应用添加ShizukuAPI'
+                },
+                {
+                    text: '3.给别人的应用添加ShizukuAPI',
+                    link: '/my-life/手机工具/Shizuku/3.给别人的应用添加ShizukuAPI'
+                }
+            ],
+        }]
     }, 
     {
         text: '日常生活',
